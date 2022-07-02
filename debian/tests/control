@@ -1,0 +1,14 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ghost 0.1.5 --all-targets --all-features
+Features: test-name=rust-ghost:@
+Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ghost 0.1.5 --all-targets 
+Features: test-name=librust-ghost-dev:default
+Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ghost 0.1.5 --all-targets --no-default-features
+Features: test-name=librust-ghost-dev:
+Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, @
+Restrictions: allow-stderr, skip-not-installable
