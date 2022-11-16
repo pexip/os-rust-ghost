@@ -1,3 +1,9 @@
+rust-ghost (0.1.5-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Wed, 16 Nov 2022 23:37:51 +0000
+
 rust-ghost (0.1.5-1) unstable; urgency=medium
 
   * Package ghost 0.1.5 from crates.io using debcargo 2.5.0
